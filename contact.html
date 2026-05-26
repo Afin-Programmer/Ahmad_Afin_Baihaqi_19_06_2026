@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - RQ Al-Jadiid</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="RQ Al-Jadiid.jpg" alt="Logo RQ Al-Jadiid" class="logo-img">
+            <span>RQ Al-Jadiid</span>
+            </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li> 
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section class="contact-section">
+            <h2>Hubungi Kami</h2>
+            <p>Pintu kami selalu terbuka untuk silaturahmi, pertanyaan seputar pendaftaran, maupun kerja sama dakwah.</p>
+            
+            <form id="contactForm" class="form-kontak">
+                <div class="form-group">
+                    <label for="nama">Nama Lengkap</label>
+                    <input type="text" id="nama" required placeholder="Masukkan nama Anda">
+                </div>
+                <div class="form-group">
+                    <label for="pesan">Pesan / Pertanyaan</label>
+                    <textarea id="pesan" rows="5" required placeholder="Tuliskan pesan Anda di sini..."></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Kirim Pesan</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 RQ Al-Jadiid. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

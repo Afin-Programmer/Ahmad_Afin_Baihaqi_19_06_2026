@@ -1,0 +1,192 @@
+/* Pengaturan Dasar & Font */
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital@0;1&family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa; /* Warna putih gading yang lembut */
+    color: #2d3748;
+    line-height: 1.6;
+}
+
+/* Navigasi */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1b4332; /* Hijau Islami Tua */
+    padding: 20px 10%;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.navbar .logo {
+    font-family: 'Amiri', serif; /* Font bergaya Arab/Klasik */
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #d8f3dc;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-img {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #b7e4c7;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: #ffffff;
+    border-bottom: 2px solid #52b788;
+}
+
+/* Hero Section (Home) */
+.hero {
+    height: 80vh;
+    background: linear-gradient(rgba(27, 67, 50, 0.85), rgba(45, 106, 79, 0.85)), url('pngtree-green-islamic-background-vector-image_20946434.webp') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-family: 'Amiri', serif;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #d8f3dc;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.btn-main {
+    background-color: #52b788;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-main:hover {
+    background-color: #40916c;
+}
+
+/* Konten Utama (About & Contact) */
+.container {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.about-section h2, .contact-section h2 {
+    font-family: 'Amiri', serif;
+    color: #1b4332;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.about-section h3 {
+    color: #2d6a4f;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.about-section ul {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+/* Form Kontak */
+.form-kontak {
+    margin-top: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #1b4332;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    font-family: inherit;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    outline: none;
+    border-color: #52b788;
+}
+
+.btn-submit {
+    background-color: #1b4332;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #2d6a4f;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1b4332;
+    color: #b7e4c7;
+    font-size: 0.9rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 40px;
+}

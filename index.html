@@ -3,290 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RQ Al-Jadiid</title>
-    <style>
-        /* --- CSS STYLING --- */
-        :root {
-            --hijau: #1b4d3e;
-            --kuning: #ffcc00;
-            --putih: #ffffff;
-            --hitam: #111111;
-            --abu-terang: #f4f4f4;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        body {
-            background-color: var(--putih);
-            color: var(--hitam);
-            line-height: 1.6;
-        }
-
-        /* Header & Navigasi */
-        header {
-            background-color: var(--hijau);
-            color: var(--putih);
-            padding: 1.2rem 2rem;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-        }
-
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .logo h1 {
-            color: var(--kuning);
-            font-size: 1.8rem;
-        }
-
-        nav ul {
-            display: flex;
-            list-style: none;
-        }
-
-        nav ul li {
-            margin-left: 2rem;
-        }
-
-        nav ul li a {
-            color: var(--putih);
-            text-decoration: none;
-            font-weight: 600;
-            transition: color 0.3s;
-            cursor: pointer;
-        }
-
-        nav ul li a:hover, nav ul li a.active {
-            color: var(--kuning);
-        }
-
-        /* Konten Utama */
-        main {
-            max-width: 1200px;
-            margin: 2rem auto;
-            padding: 0 2rem;
-            min-height: 65vh;
-        }
-
-        .page {
-            display: none; /* Sembunyikan semua halaman di awal */
-        }
-
-        .page.active-page {
-            display: block; /* Hanya tampilkan halaman yang aktif */
-        }
-
-        /* Halaman Index / Home (Hero Section) */
-        .hero {
-            background-color: var(--hijau);
-            color: var(--putih);
-            padding: 4rem 2rem;
-            text-align: center;
-            border-radius: 10px;
-            margin-bottom: 2.5rem;
-            border-bottom: 5px solid var(--kuning);
-        }
-
-        .hero h2 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            color: var(--kuning);
-        }
-
-        .home-content {
-            background-color: var(--abu-terang);
-            padding: 2rem;
-            border-radius: 8px;
-            border-left: 5px solid var(--hijau);
-        }
-
-        /* Halaman About */
-        .about-section {
-            background: var(--abu-terang);
-            padding: 2rem;
-            border-radius: 10px;
-            border-left: 5px solid var(--hijau);
-        }
-
-        .about-section h3 {
-            color: var(--hijau);
-            margin-top: 1.5rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .about-section h3:first-child {
-            margin-top: 0;
-        }
-
-        /* Halaman Contact */
-        .contact-form {
-            max-width: 600px;
-            margin: 0 auto;
-            background: var(--abu-terang);
-            padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-        }
-
-        .form-group {
-            margin-bottom: 1.5rem;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 0.5rem;
-            font-weight: bold;
-            color: var(--hijau);
-        }
-
-        .form-group input, .form-group textarea {
-            width: 100%;
-            padding: 0.75rem;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-size: 1rem;
-        }
-
-        .btn-submit {
-            background-color: var(--hijau);
-            color: var(--putih);
-            padding: 0.75rem 2rem;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-weight: bold;
-            font-size: 1rem;
-            transition: background 0.3s, color 0.3s;
-        }
-
-        .btn-submit:hover {
-            background-color: var(--hitam);
-            color: var(--kuning);
-        }
-
-        /* Footer */
-        footer {
-            background-color: var(--hitam);
-            color: var(--putih);
-            text-align: center;
-            padding: 1.5rem;
-            margin-top: 4rem;
-            border-top: 4px solid var(--kuning);
-        }
-    </style>
+    <title>Home - RQ Al-Jadiid</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <div class="navbar">
-            <div class="logo">
-                <h1>RQ Al-Jadiid</h1>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="RQ Al-Jadiid.jpg" alt="Logo RQ Al-Jadiid" class="logo-img">
+            <span>RQ Al-Jadiid</span>
             </div>
-            <nav>
-                <ul>
-                    <li><a onclick="switchPage('home')" id="nav-home" class="active">Home</a></li>
-                    <li><a onclick="switchPage('about')" id="nav-about">About</a></li>
-                    <li><a onclick="switchPage('contact')" id="nav-contact">Contact</a></li>
-                </ul>
-            </nav>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Selamat Datang di RQ Al-Jadiid</h1>
+            <p>"Ngaji Terus, Jangan Putus"</p>
+            <button id="btnBelajar" class="btn-main">Mulai Belajar</button>
         </div>
     </header>
 
-    <main>
-        
-        <section id="home" class="page active-page">
-            <div class="hero">
-                <h2>Selamat Datang di Rumah Quran Al-Jadiid</h2>
-                <p>Tempat terbaik untuk belajar, menghafal, dan mentadabburi Al-Quran dengan metode yang mudah dan menyenangkan.</p>
-            </div>
-
-            <div class="home-content">
-                <h3>Program Utama Kami</h3>
-                <p style="margin-top: 0.5rem;">Kami menyediakan berbagai program pengajian mulai dari tahsin (perbaikan bacaan), tahfidz (hafalan), hingga kajian fiqih dan akhlak untuk segala usia.</p>
-                <p style="margin-top: 1rem;">Mari bergabung bersama kami untuk membentuk lingkungan yang Qurani, berkarakter mulia, dan berpengetahuan luas demi masa depan yang penuh berkah.</p>
-            </div>
-        </section>
-
-        <section id="about" class="page">
-            <h2 style="margin-bottom: 1.5rem; color: var(--hijau);">Tentang Kami</h2>
-            <div class="about-section">
-                <h3>Visi & Misi</h3>
-                <p>RQ Al-Jadiid didirikan dengan tujuan untuk mencetak generasi Qurani yang berakhlak mulia, cerdas, dan bermanfaat bagi masyarakat luas.</p>
-                
-                <h3>Sejarah Singkat</h3>
-                <p>Berawal dari niat mulia untuk membumikan Al-Quran di lingkungan sekitar, pengajian RQ Al-Jadiid terus berkembang dan berkomitmen memberikan pendidikan Al-Quran yang berkualitas serta mudah diakses oleh seluruh lapisan masyarakat.</p>
-            </div>
-        </section>
-
-        <section id="contact" class="page">
-            <h2 style="text-align: center; margin-bottom: 1.5rem; color: var(--hijau);">Hubungi Kami</h2>
-            <div class="contact-form">
-                <form id="pesanForm">
-                    <div class="form-group">
-                        <label for="nama">Nama Lengkap</label>
-                        <input type="text" id="nama" required placeholder="Masukkan nama Anda">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Alamat Email</label>
-                        <input type="email" id="email" required placeholder="Masukkan email Anda">
-                    </div>
-                    <div class="form-group">
-                        <label for="pesan">Pesan / Pertanyaan</label>
-                        <textarea id="pesan" rows="5" required placeholder="Tuliskan pesan Anda di sini..."></textarea>
-                    </div>
-                    <button type="submit" class="btn-submit">Kirim Pesan</button>
-                </form>
-            </div>
-        </section>
-
-    </main>
-
     <footer>
-        <p>&copy; 2026 RQ Al-Jadiid. Hak Cipta Dilindungi.</p>
+        <p>&copy; 2026 RQ Al-Jadiid. All Rights Reserved.</p>
     </footer>
 
-    <script>
-        // Fungsi untuk berpindah halaman tanpa reload (SPA)
-        function switchPage(pageId) {
-            // Sembunyikan semua halaman
-            const pages = document.querySelectorAll('.page');
-            pages.forEach(page => {
-                page.classList.remove('active-page');
-            });
-
-            // Tampilkan halaman yang dipilih
-            const targetPage = document.getElementById(pageId);
-            if (targetPage) {
-                targetPage.classList.add('active-page');
-            }
-
-            // Ubah status aktif/warna pada menu navigasi
-            const navLinks = document.querySelectorAll('nav ul li a');
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-            });
-            document.getElementById('nav-' + pageId).classList.add('active');
-        }
-
-        // JavaScript untuk menangani form kontak
-        document.getElementById('pesanForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            const nama = document.getElementById('nama').value;
-            alert('Terima kasih ' + nama + ', pesan Anda telah terkirim!');
-            this.reset(); // Kosongkan form kembali setelah submit
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
